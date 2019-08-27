@@ -1,0 +1,122 @@
+@import '~antd/lib/style/themes/default.less';
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.tableListForm {
+  :global {
+    .ant-form-inline .ant-form-item{
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        width: auto;
+        line-height: 32px;
+        padding-right: 8px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+  .numInput{
+    width: 100%;
+  }
+}
+
+.pages{
+  float: right;
+  padding: 24px 0 16px;
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+
+.greenButton{
+  background-color: rgb(68, 167, 98);
+}
+.redButton{
+  background-color: rgb(170, 74, 36);
+}
+.detailButton{
+  background-color: rgb(125,168,195);
+}
+
+.buttonVisibleTrue {
+  display: block;
+}
+.buttonVisibleFalse {
+  display: none;
+}
+
+.result {
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 24px 0 8px;
+}
+.complaintTitle {
+  margin: 0 auto;
+  max-width: 368px;
+  font-size: 16px;
+  
+}
+.main {
+  width: 450px;
+  margin: 0 auto;
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+    }
+  }
+
+  h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+
+  .submit {
+    width: 50%;
+  }
+
+  .login {
+    float: right;
+    line-height: @btn-height-lg;
+  }
+  
+}
+
+
+.other {
+  text-align: left;
+  margin-top: 24px;
+  line-height: 22px;
+
+  .login {
+    float: right;
+  }
+}
